@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio Algoritmos III</title>
+
+    <!-- H O J A   D E   E S T I L O -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- G O O G L E   F O N T S -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="main_container">
+
+        <div class="title_container">
+            <h1 class="main_title">Calculadora de cambio</h1>
+            <div class="img_container">
+                <img class="img_title" src="./img/img_calculate_money.png">
+            </div>
+        </div>
+
+        <p class="text_explanation">Esta calculadora te ayudará a realizar una devolución de cambio óptimo, puedes introducir la caja 
+        disponible haciendo click en el siguiente botón o hacer el cálculo directamente.</p>
+
+        <button id="button-cashregister" class="button_cashregister">Introducir caja disponible</button>
+
+        <div id="hidden-cashregister" class="hidden_content">
+
+            <div class="input_container_cashregister">
+                <div class="input_container_money">
+                    <label class="input_name" for="bill-200">Billetes de 200€</label>
+                    <input id="bill-200" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="bill-100">Billetes de 100€</label>
+                    <input id="bill-100" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="bill-50">Billetes de 50€</label>
+                    <input id="bill-50" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="bill-20">Billetes de 20€</label>
+                    <input id="bill-20" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="bill-10">Billetes de 10€</label>
+                    <input id="bill-10" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="bill-5">Billetes de 5€</label>
+                    <input id="bill-5" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="coin-2">Monedas de 2€</label>
+                    <input id="coin-2" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="coin-1">Monedas de 1€</label>
+                    <input id="coin-1" class="input_number" type="number" placeholder="0">
+                </div> 
+                <div class="input_container_money">
+                    <label class="input_name" for="coin-050">Monedas de 0.50€</label>
+                    <input id="coin-050" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="coin-020">Monedas de 0.20€</label>
+                    <input id="coin-020" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="coin-010">Monedas de 0.10€</label>
+                    <input id="coin-010" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="coin-005">Monedas de 0.05€</label>
+                    <input id="coin-005" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="coin-002">Monedas de 0.02€</label>
+                    <input id="coin-002" class="input_number" type="number" placeholder="0">
+                </div>
+                <div class="input_container_money">
+                    <label class="input_name" for="coin-001">Monedas de 0.01€</label>
+                    <input id="coin-001" class="input_number" type="number" placeholder="0">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="input_container">
+            <div class="input_container_box">
+                <div class="input_container_total">
+                    <label class="input_name" for="input-total">Total de la compra</label>
+                    <input id="input-total" class="input_number" type="number" placeholder="000.00">
+                </div>
+                <div class="input_container_received">
+                    <label class="input_name" for="input-received">Dinero entregado</label>
+                    <input id="input-received" class="input_number" type="number" placeholder="000.00">
+                </div>
+            </div>
+            <button id="button-calculate" class="button_calculate">Calcular cambio</button>
+        </div>
+
+        <div id="result-container" class="hidden_content">
+            <h3 class="text">A devolver: </h3>
+            <p><spam id="give-to-client"></spam></p>
+        </div>
+
+    </main>
+
+
+<!-- J A V A S C R I P T -->
+<script src="./js/app.js"></script>
+
+</body>
+</html>
